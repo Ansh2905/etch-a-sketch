@@ -28,8 +28,8 @@ function generateGrid(dimension)
        div.style.border = '1px solid black';
        container.appendChild(div);
    }
-   container.style.gridTemplateRows = "repeat(dimension, 1fr)";
-   container.style.gridTemplateColumns = "repeat(dimension, 1fr)";
+   container.style.gridTemplateRows = `repeat(${dimension}, 1fr)`;
+   container.style.gridTemplateColumns = `repeat(${dimension}, 1fr)`;
 }
 function removeGrid()
 {
