@@ -77,7 +77,6 @@ function randomFill(e)
     whiteButton.style.background = "white";
     e.target.style.background = "silver";
    const squares = container.querySelectorAll('.squares');
-   console.log(squares);
    squares.forEach(square => square.addEventListener('mouseover', () => {
        let redColor = Math.floor(255* Math.random());
        let greenColor = Math.floor(255* Math.random());
@@ -89,7 +88,6 @@ function randomFill(e)
 function resetGrid()
 {
     const squares = container.querySelectorAll('.squares');
-    console.log(squares);
     squares.forEach(square => square.style.background = "white");
 }
 
